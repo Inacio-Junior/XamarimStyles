@@ -1,0 +1,2 @@
+D:\prg.2018\AuE_2018\Paisagismo\2018\LandManagerApp\LandManager\LandManager.UWP\LandManager.UWP.csproj;x86
+D:\prg.2018\AuE_2018\Paisagismo\2018\LandManagerApp\LandManager\LandManager\LandManager.csproj;neutral

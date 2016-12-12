@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             x:Class="LandManager.Views.viewLogin"
+             Title="LOGIN">
+
+  <Grid RowSpacing="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="100" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="50" />
+    </Grid.RowDefinitions>
+
+    <!--  row background colors  -->
+    <BoxView Grid.Row="0" Color="#3A444D" />
+    <BoxView Grid.Row="1" Color="#F1F2F2" />
+    <BoxView Grid.Row="2" Color="#3A444D" />
+
+    <!--  Título  -->
+    <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="Center">
+      <!--<Image Source="icon.png" />-->
+      <Label FontSize="Large" Text="LOGIN" TextColor="White" />  
+    </StackLayout>
+    
+    <!--  Grid com o layout da página  -->
+    <Grid Grid.Row="1" >                 
+      <StackLayout Padding="20" Spacing="20" VerticalOptions="Center">
+        <Entry x:Name="txtNSerie" Placeholder="Número de Série" Keyboard="Numeric" />
+        <Entry x:Name="txtEmail" Placeholder="Email" Keyboard="Email" />
+        <Label x:Name="lblManter" Text="Manter Logado" FontSize="20"/>
+        <Grid ColumnSpacing="20">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+
+          <Switch x:Name="switchLogar" Toggled="SwitchLogar_OnToggled" Grid.Column="0" />
+          <Label x:Name="lblCheck" Grid.Column="1" />
+        </Grid>
+        
+        <Button x:Name="cmdLogin" Text="Login" Style="{StaticResource btn-sucess}"/>
+      </StackLayout>
+               
+    </Grid>
+  </Grid>
+  
+  
+  
+  
+
+</ContentPage>

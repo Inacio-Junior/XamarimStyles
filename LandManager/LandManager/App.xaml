@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LandManager.App">
+
+  <!--Criando o style do app-->
+  <Application.Resources>
+
+    <ResourceDictionary>
+      <!--Cores-->
+      <Color x:Key="default">#ffffff</Color>
+      <Color x:Key="primary">#337ab7</Color>
+      <Color x:Key="success">#5CB85C</Color>
+      <Color x:Key="info">#5bc0de</Color>
+      <Color x:Key="warning">#f0ad4e</Color>
+      <Color x:Key="danger">#d9534f</Color>
+
+      <!--Botões-->
+      <Style x:Key="Botao" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Font" Value="Default"/>
+        <Setter Property="FontSize" Value="10"/>
+      </Style>
+
+      <!--BasedOn significa que ele herda as caracteristicas da classe Botao.-->
+      <Style x:Key="btn-default" BasedOn="{StaticResource Botao}" TargetType="Button">        
+        <Setter Property="FontSize" Value="20" />
+      </Style>
+
+      <Style x:Key="btn-primary" BasedOn="{StaticResource Botao}" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource primary}" />
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
+
+      <Style x:Key="btn-sucess" BasedOn="{StaticResource Botao}" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource success}" />
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
+
+      <Style x:Key="btn-info" BasedOn="{StaticResource Botao}" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource info}" />
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
+
+      <Style x:Key="btn-warning" BasedOn="{StaticResource Botao}" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource warning}" />
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
+
+    <Style x:Key="btn-danger" BasedOn="{StaticResource Botao}" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource danger}" />
+        <Setter Property="TextColor" Value="White"/>
+      </Style>
+    
+    </ResourceDictionary>
+
+  </Application.Resources>
+
+</Application>

@@ -1,0 +1,2 @@
+D:\prg.2018\AuE_2018\Paisagismo\2018\LandManagerApp\LandManager\LandManager.WinPhone\LandManager.WinPhone.csproj;neutral
+D:\prg.2018\AuE_2018\Paisagismo\2018\LandManagerApp\LandManager\LandManager\LandManager.csproj;neutral
